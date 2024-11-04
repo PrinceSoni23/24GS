@@ -1,10 +1,13 @@
 // pages/TermsAndConditions.jsx
 
 import Head from 'next/head';
+import Navbar from '@/src/components/Navbar/Navbar';
+import Footer from '@/src/components/Footer/Footer';
 
 const TermsAndConditions = () => {
     return (
         <>
+        <Navbar/>
             <Head>
                 <title>Terms & Conditions / Privacy Policy</title>
                 <meta name="description" content="Terms and Conditions, Return & Cancellation, and Privacy Policy" />
@@ -13,7 +16,7 @@ const TermsAndConditions = () => {
             </Head>
 
             <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241259.jpg?ga=GA1.1.932687991.1719332392&semt=ais_hybrid")' }}>
-                <div className="absolute inset-0 bg-black opacity-60"></div> {/* Dark overlay for contrast */}
+                <div className="absolute inset-0 bg-black opacity-40"></div> Dark overlay for contrast
                 <div className="max-w-7xl mx-auto p-6 relative z-10 text-white">
                     <header className="mb-10 text-center">
                         <h1 className="text-5xl font-extrabold mb-4 animate__animated animate__fadeInDown">Terms & Conditions / Return & Cancellation</h1>
@@ -95,16 +98,9 @@ const TermsAndConditions = () => {
                             <li>Modification of Services: 24 Global Solution reserves the right to modify or change services at any time without prior notice.</li>
                         </ul>
                     </section>
-
-                    <section className="text-center mb-6">
-                        <h3 className="text-3xl font-semibold mb-4 animate__animated animate__fadeInUp">Get in Touch!</h3>
-                        <p className="mb-4">If you have any questions or would like to learn more about our terms and conditions, please reach out.</p>
-                        <a href="/contact" className="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-700 animate__animated animate__pulse">
-                            Contact Us
-                        </a>
-                    </section>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
