@@ -123,6 +123,7 @@
     .h-title {
         align-items: center;
         font-size: 2rem;
+        text-align: center;
     }
 
     .h-description {
@@ -146,6 +147,7 @@
     .h-title {
         align-items: center;
         font-size: 4.2rem;
+        
     }
 }
   
