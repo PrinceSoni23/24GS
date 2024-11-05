@@ -1,50 +1,55 @@
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <div className="w-full h-[70vh] md:h-[120vh] flex items-center justify-center gap-x-9 ">
+    <div className="w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-x-9 px-4 md:px-8">
+      {/* Video Section */}
       <video
         loop
         autoPlay
         muted
         src="https://cdn.cuberto.com/cb/home/summary/1.mp4?3"
-        className="hidden lg:block w-1/3"
+        className="block w-full md:w-2/3 lg:w-1/3 mb-6 lg:mb-0 mt-24"
       ></video>
-      <div className="space-y-9 text-xl md:text-2xl px-6 md:px-0 font-normal ">
-      <p>
-          24 Global Solution is a IT Solutions {" "}
+
+      {/* Text and Button Section */}
+      <div className="space-y-6 md:space-y-9 text-lg md:text-xl lg:text-2xl font-normal text-center lg:text-left mt-4 lg:mt-0">
+        <p className="leading-relaxed mt-10 ">
+          24 Global Solution is an IT Solutions{" "}
           <br className="hidden md:block" />
           agency focused on branding, UI/UX <br className="hidden md:block" />
-          design, repair , providing customer support <br className="hidden md:block" />
-         which will help you to boost your buisness.
+          design, repair, and customer support <br className="hidden md:block" />
+          to help you boost your business.
         </p>
+
         <motion.div
           initial="initial"
           whileHover="hovered"
-          transition={{ duration: 3 }}
-          className="relative flex flex-col whitespace-nowrap rounded-full p-0 text-center border border-black overflow-hidden hover:cursor-pointer"
+          transition={{ duration: 0.3 }}
+          className="relative flex flex-col whitespace-nowrap rounded-full text-lg md:text-xl lg:text-2xl text-center border border-black overflow-hidden hover:cursor-pointer mx-auto lg:mx-0"
+          style={{ width: "fit-content" }}
         >
           <motion.div
             variants={{
               initial: { y: 0 },
-              hovered: { y: "-10%", opacity: 0 },
+              hovered: { y: "-100%", opacity: 0 },
             }}
-            transition={{ duration: 0.2 }}
-            className="relative rounded-full py-9 md:py-16 text-stone-900/90 border-2 bg-white border-none"
+            transition={{ duration: 0.3 }}
+            className="relative rounded-full py-4 md:py-6 lg:py-9 px-6 bg-white text-stone-900 border-none"
           >
-          24 GlobalSolution
+            24 Global Solution
           </motion.div>
           <motion.div
             variants={{
               initial: { y: "100%" },
               hovered: { y: 0 },
             }}
-            transition={{ duration: 0.2, type: "tween", ease: "easeIn" }}
-            className="absolute inset-0 rounded-xl py-9 md:py-16 text-white border-2 bg-stone-950 border-none"
+            transition={{ duration: 0.3, type: "tween", ease: "easeIn" }}
+            className="absolute inset-0 rounded-full py-4 md:py-6 lg:py-9 px-6 bg-stone-950 text-white border-none"
           >
-             24 GlobalSolution
+            24 Global Solution
           </motion.div>
         </motion.div>
       </div>

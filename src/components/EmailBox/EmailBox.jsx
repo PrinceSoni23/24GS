@@ -3,6 +3,7 @@ import './EmailBox.css'
 import {LuMail} from 'react-icons/lu'
 import {motion} from 'framer-motion'
 import { containerVariants } from '@/src/utils/animation'
+import Link from 'next/link'
 
 const EmailBox = () => {
   return (
@@ -52,7 +53,7 @@ const EmailBox = () => {
           once: true,
         }}
         className="getFunded">
-            Get In Touch
+           <Link href="/Contact"><div> Get In Touch</div></Link>
         </motion.div>
     </motion.div>
   )
