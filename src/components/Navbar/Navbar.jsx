@@ -48,9 +48,9 @@ const Navbar = () => {
                             <Link href="/services">
                                 <span>Services</span>
                             </Link>
-                            <ScrollLink to="wwi-wrapper" spy smooth>
-                                <span>Who we Partner With</span>
-                            </ScrollLink>
+                            <Link href="/TC">
+                                <span>Terms And Conditions</span>
+                            </Link>
                             <ScrollLink to="t-wrapper" spy smooth offset={100}>
                                 <span>Testimonials</span>
                             </ScrollLink>

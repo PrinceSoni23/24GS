@@ -21,7 +21,7 @@ const Footer = () => {
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Our Services</a></li>
             <li><a href="/Contact">Contact</a></li>
-            <li><a href="/TC">Terms and conditions</a></li>
+            <li><a href="/Intern">Internship Verification</a></li>
             <li><a href="/PP">Privacy Policy</a></li>
             <li><a href="/RC"> Return and cancellation policy</a></li>
           </ul>
