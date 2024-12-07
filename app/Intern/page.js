@@ -60,6 +60,15 @@ const internData = {
     project: "TripItToday Website (Property and Hotel Booking Website)",
     LinkedIn: "https://www.linkedin.com/in/narayan-tripathi-77837222a",
   },
+  "GS-6250067Kr-536": {
+    picture: "/Krishna.png",
+    name: "Krishna Rajput",
+    email: "krishnarajput1027@gmail.com",
+   "Internship-Duration": "4 Months (12th April – 11th August, 2023) ",
+    role: "Software Engineering Intern (Application Development)",
+    project: "TripItToday Application (Property and Hotel Booking App)",
+    LinkedIn: "linkedin.com/in/krishna-rajput-722491220",
+  },
 };
 
 const InternProfile = () => {
